@@ -1,0 +1,129 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+}
+
+/* ENCABEZADO */
+.encabezado {
+    min-height: 100px;
+    background-color: #43495e;
+    color: #f5f5f5;
+    border-bottom: 1px solid #eeeeee;
+}
+
+/* SECCIÓN PRINCIPAL */
+.seccion-especificidad {
+    background-color: #ffffff;
+    padding: 40px 20px;
+}
+
+/* TITULO PRINCIPAL */
+.titulo-especificidad {
+    color: #172033;
+    font-weight: bold;
+}
+
+.seccion-especificidad .lead {
+    color: #555555;
+}
+
+/* ETIQUETAS */
+.etiqueta-css {
+    display: inline-block;
+    background-color: #7d7f96;
+    color: #333333;
+    padding: 7px 14px;
+    border-radius: 5px;
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+/* CAJAS */
+.tarjeta-css {
+    min-height: 300px;
+    height: 100%;
+    padding: 25px;
+    border-radius: 8px;
+    color: #333333;
+    background-color: #ffffff;
+    border: 1px solid #e5e5e5;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, .06);
+    transition: transform .3s, box-shadow .3s;
+}
+
+.tarjeta-css:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, .10);
+}
+
+.tarjeta-css h3 {
+    color: #172033;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.tarjeta-css p,
+.tarjeta-css li {
+    color: #444444;
+    line-height: 1.6;
+}
+
+/* TODAS LAS CAJAS BLANCAS */
+.row.g-4 > div .tarjeta-css {
+    background-color: #ffffff;
+}
+
+/* EJEMPLOS DE CODIGO */
+.codigo-css {
+    background-color: #f5f5f5;
+    color: #333333;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #eeeeee;
+    overflow-x: auto;
+    font-size: 14px;
+    white-space: pre;
+}
+
+/* CAJA FINAL */
+.tarjeta-prioridad {
+    background-color: #ffffff;
+    border-left: 5px solid #dddddd;
+}
+
+/* PIE DE PAGINA */
+footer {
+    background-color: #ffffff;
+    color: #333333;
+    border-top: 1px solid #eeeeee;
+}
+
+/* TABLET */
+@media (max-width: 991px) {
+    .tarjeta-css {
+        min-height: 280px;
+    }
+}
+
+/* CELULAR */
+@media (max-width: 576px) {
+    .seccion-especificidad {
+        padding: 30px 12px;
+    }
+
+    .tarjeta-css {
+        min-height: auto;
+        padding: 20px;
+    }
+
+    .titulo-especificidad {
+        font-size: 30px;
+    }
+}

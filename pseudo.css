@@ -1,0 +1,135 @@
+
+/* CONFIGURACIÓN GENERAL */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f6fc;
+    color: #172033;
+}
+
+/* ENCABEZADO */
+.encabezado {
+    background: linear-gradient(135deg, #171b30, #263b70);
+    color: white;
+}
+
+/* SECCIÓN PRINCIPAL */
+.seccion-pseudoclases {
+    padding: 60px 0;
+    background: #f4f6fc;
+}
+
+/* TÍTULO */
+.titulo-pseudoclases {
+    color: #202d55;
+    font-weight: 700;
+    margin-top: 15px;
+}
+
+/* ETIQUETAS */
+.etiqueta-css {
+    display: inline-block;
+    background: #e3e9ff;
+    color: #344c9a;
+    padding: 7px 14px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* TARJETAS */
+.tarjeta-css {
+    height: 100%;
+    padding: 28px;
+    background: #ffffff;
+    border-radius: 16px;
+    border: 1px solid #e1e6f2;
+    box-shadow: 0 5px 18px rgba(30, 50, 100, 0.08);
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+/* EFECTO AL PASAR EL CURSOR */
+.tarjeta-css:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(30, 50, 100, 0.14);
+}
+
+/* TÍTULOS DE LAS TARJETAS */
+.tarjeta-css h3 {
+    color: #263b70;
+    font-size: 21px;
+    font-weight: bold;
+    margin-bottom: 18px;
+}
+
+/* PÁRRAFOS */
+.tarjeta-css p {
+    font-size: 16px;
+    line-height: 1.7;
+    color: #4b5568;
+}
+
+/* LISTAS */
+.tarjeta-css ul {
+    padding-left: 22px;
+}
+
+.tarjeta-css li {
+    color: #4b5568;
+    line-height: 1.8;
+}
+
+/* CÓDIGO */
+.codigo-css {
+    background: #20283f;
+    color: #dce7ff;
+    padding: 18px;
+    border-radius: 10px;
+    font-size: 14px;
+    line-height: 1.7;
+    overflow-x: auto;
+    margin-top: 18px;
+}
+
+/* ÚLTIMA TARJETA */
+.tarjeta-prioridad {
+    background: #edf1ff;
+    border: 1px solid #d4ddff;
+}
+
+/* PIE DE PÁGINA */
+footer {
+    background: #171b30;
+    color: white;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+
+    .seccion-pseudoclases {
+        padding: 35px 0;
+    }
+
+    .tarjeta-css {
+        padding: 22px;
+    }
+
+    .titulo-pseudoclases {
+        font-size: 30px;
+    }
+
+    .tarjeta-css h3 {
+        font-size: 19px;
+    }
+
+    .codigo-css {
+        font-size: 12px;
+    }
+}

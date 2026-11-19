@@ -1,0 +1,308 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Especificidad CSS - Digital Academy</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="especificidad.css">
+</head>
+
+<body>
+
+    <header class="encabezado text-center p-4">
+        <h1>Digital Academy</h1>
+        <p>Aprende programación desde cero</p>
+
+        <a href="index.html" class="btn btn-light">
+            Volver al inicio
+        </a>
+    </header>
+
+    <main class="seccion-especificidad">
+
+        <div class="container">
+
+            <div class="text-center mb-5">
+
+                <span class="etiqueta-css">APRENDE CSS</span>
+
+                <h2 class="titulo-especificidad display-5">
+                    Especificidad en CSS
+                </h2>
+
+                <p class="lead">
+                    Aprende cómo funcionan las prioridades de los estilos
+                    y cómo controlar el diseño de tus páginas web.
+                </p>
+
+            </div>
+
+            <div class="row g-4">
+
+                <!-- CAJA 1 -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="tarjeta-css">
+                        <span class="etiqueta-css">01 - Concepto</span>
+                        <h3>¿Qué es la especificidad?</h3>
+
+                        <p>
+                            La especificidad es un mecanismo de CSS que
+                            permite al navegador decidir qué regla de
+                            estilo aplicar cuando varios selectores
+                            afectan al mismo elemento.
+                        </p>
+
+                        <p>
+                            Cuanto mayor sea la especificidad de una
+                            regla, mayor será su prioridad frente a
+                            otras reglas de la misma categoría de
+                            importancia en la cascada.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- CAJA 2 -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="tarjeta-css">
+                        <span class="etiqueta-css">02 - Funcionamiento</span>
+                        <h3>¿Cómo funciona?</h3>
+
+                        <p>
+                            El navegador analiza las reglas CSS y
+                            determina cuáles pueden aplicarse a cada
+                            elemento HTML.
+                        </p>
+
+                        <ul>
+                            <li>Revisa las reglas que coinciden.</li>
+                            <li>Considera la importancia de las reglas.</li>
+                            <li>Compara la especificidad.</li>
+                            <li>Si existe empate, considera el orden.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- CAJA 3 -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="tarjeta-css">
+                        <span class="etiqueta-css">03 - Prioridad</span>
+                        <h3>Niveles de especificidad</h3>
+
+                        <p>Los selectores tienen diferentes pesos:</p>
+
+                        <ul>
+                            <li><strong>ID:</strong> mayor peso.</li>
+                            <li><strong>Clases:</strong> peso intermedio.</li>
+                            <li><strong>Elementos:</strong> menor peso.</li>
+                            <li><strong>Universal (*):</strong> peso cero.</li>
+                        </ul>
+
+                        <p>
+                            Los estilos en línea también tienen una
+                            especificidad elevada.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- CAJA 4 -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="tarjeta-css">
+                        <span class="etiqueta-css">04 - Selectores</span>
+                        <h3>Selector ID</h3>
+
+                        <p>
+                            Se identifica utilizando el símbolo #.
+                            Tiene más especificidad que una clase
+                            o un selector de elemento.
+                        </p>
+
+                        <pre class="codigo-css">#titulo {
+    color: blue;
+}</pre>
+
+                        <p>
+                            Se recomienda utilizar identificadores
+                            únicos.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- CAJA 5 -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="tarjeta-css">
+                        <span class="etiqueta-css">05 - Selectores</span>
+                        <h3>Clases y pseudoclases</h3>
+
+                        <p>
+                            Las clases se identifican con un punto.
+                            También se incluyen los selectores de
+                            atributos y las pseudoclases.
+                        </p>
+
+                        <pre class="codigo-css">.boton {
+    background: blue;
+}
+
+.boton:hover {
+    background: green;
+}</pre>
+                    </div>
+                </div>
+
+                <!-- CAJA 6 -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="tarjeta-css">
+                        <span class="etiqueta-css">06 - Selectores</span>
+                        <h3>Elementos HTML</h3>
+
+                        <p>
+                            Los selectores de elementos permiten
+                            aplicar estilos directamente a las
+                            etiquetas HTML.
+                        </p>
+
+                        <pre class="codigo-css">p {
+    color: gray;
+}
+
+h1 {
+    font-size: 30px;
+}</pre>
+
+                        <p>
+                            Su especificidad es menor que la de
+                            las clases y los identificadores.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- CAJA 7 -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="tarjeta-css">
+                        <span class="etiqueta-css">07 - Selectores</span>
+                        <h3>Selector universal</h3>
+
+                        <p>
+                            El selector universal se representa
+                            con el símbolo * y permite seleccionar
+                            todos los elementos.
+                        </p>
+
+                        <pre class="codigo-css">* {
+    margin: 0;
+    padding: 0;
+}</pre>
+
+                        <p>
+                            No aporta especificidad.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- CAJA 8 -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="tarjeta-css">
+                        <span class="etiqueta-css">08 - Importancia</span>
+                        <h3>Regla !important</h3>
+
+                        <p>
+                            La declaración !important cambia la
+                            prioridad de una declaración dentro
+                            de la cascada CSS.
+                        </p>
+
+                        <pre class="codigo-css">p {
+    color: red !important;
+}</pre>
+
+                        <p>
+                            Se recomienda utilizarla con precaución.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- CAJA 9 -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="tarjeta-css">
+                        <span class="etiqueta-css">09 - Ejemplo</span>
+                        <h3>Comparación de selectores</h3>
+
+                        <p>
+                            Observa cómo se comparan diferentes
+                            selectores que afectan al mismo párrafo.
+                        </p>
+
+                        <pre class="codigo-css">p {
+    color: blue;
+}
+
+.texto {
+    color: green;
+}
+
+#mensaje {
+    color: red;
+}</pre>
+
+                        <p>
+                            Si los tres selectores coinciden y
+                            tienen la misma importancia, gana
+                            el selector ID.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- CAJA 10 -->
+                <div class="col-12">
+                    <div class="tarjeta-css tarjeta-prioridad">
+
+                        <span class="etiqueta-css">10 - Recomendaciones</span>
+
+                        <h3>Consejos para escribir mejor CSS</h3>
+
+                        <div class="row g-3">
+
+                            <div class="col-12 col-md-6">
+                                <ul>
+                                    <li>Organiza y comenta tu código.</li>
+                                    <li>Utiliza clases para los estilos.</li>
+                                    <li>Evita selectores demasiado específicos.</li>
+                                </ul>
+                            </div>
+
+                            <div class="col-12 col-md-6">
+                                <ul>
+                                    <li>Evita utilizar !important innecesariamente.</li>
+                                    <li>Mantén una estructura ordenada.</li>
+                                    <li>Utiliza metodologías como BEM.</li>
+                                </ul>
+                            </div>
+
+                        </div>
+
+                        <p class="mb-0">
+                            Un buen CSS debe ser fácil de entender,
+                            modificar y mantener.
+                        </p>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="text-center p-4">
+        <p class="mb-0">© 2026</p>
+    </footer>
+
+</body>
+</html>

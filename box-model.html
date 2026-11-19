@@ -1,0 +1,509 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Box Model en CSS - Digital Academy</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="box-model.css">
+</head>
+
+<body>
+
+    <header class="encabezado text-center p-4">
+        <h1>Digital Academy</h1>
+        <p>Aprende programación desde cero</p>
+
+        <a href="index.html" class="btn btn-light">
+            Volver al inicio
+        </a>
+    </header>
+
+    <main class="seccion-box">
+
+        <div class="container">
+
+            <div class="text-center mb-5">
+
+                <span class="etiqueta-css">APRENDE CSS</span>
+
+                <h2 class="titulo-box display-5">
+                    Box Model en CSS
+                </h2>
+
+                <p class="lead">
+                    Aprende cómo funciona el modelo de caja y cómo
+                    controlar el espacio, tamaño y distribución
+                    de los elementos de una página web.
+                </p>
+
+            </div>
+
+            <div class="row g-4">
+
+                <!-- CAJA 1 -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="tarjeta-css">
+
+                        <span class="etiqueta-css">01 - Concepto</span>
+
+                        <h3>¿Qué es el Box Model?</h3>
+
+                        <p>
+                            El Box Model o modelo de caja es uno
+                            de los conceptos fundamentales de CSS.
+                            Establece cómo se representa cada elemento
+                            HTML dentro de una página web.
+                        </p>
+
+                        <p>
+                            Cada elemento se comporta como una caja
+                            que contiene diferentes áreas encargadas
+                            de controlar su tamaño y separación.
+                        </p>
+
+                    </div>
+                </div>
+
+                <!-- CAJA 2 -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="tarjeta-css">
+
+                        <span class="etiqueta-css">02 - Estructura</span>
+
+                        <h3>Partes del modelo de caja</h3>
+
+                        <p>
+                            El modelo de caja está formado por
+                            cuatro partes principales:
+                        </p>
+
+                        <ul>
+                            <li><strong>Content:</strong> contenido del elemento.</li>
+                            <li><strong>Padding:</strong> espacio interior.</li>
+                            <li><strong>Border:</strong> borde de la caja.</li>
+                            <li><strong>Margin:</strong> espacio exterior.</li>
+                        </ul>
+
+                        <p>
+                            Todas estas partes trabajan juntas
+                            para determinar el espacio que ocupa
+                            un elemento.
+                        </p>
+
+                    </div>
+                </div>
+
+                <!-- CAJA 3 -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="tarjeta-css">
+
+                        <span class="etiqueta-css">03 - Contenido</span>
+
+                        <h3>Content</h3>
+
+                        <p>
+                            El content es el área donde se encuentra
+                            el contenido principal del elemento,
+                            como texto, imágenes o información.
+                        </p>
+
+                        <p>
+                            Sus dimensiones se pueden controlar
+                            utilizando las propiedades width
+                            y height.
+                        </p>
+
+                        <pre class="codigo-css">.caja {
+    width: 300px;
+    height: 150px;
+}</pre>
+
+                    </div>
+                </div>
+
+                <!-- CAJA 4 -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="tarjeta-css">
+
+                        <span class="etiqueta-css">04 - Espaciado</span>
+
+                        <h3>Padding</h3>
+
+                        <p>
+                            El padding es el espacio interior
+                            que existe entre el contenido
+                            de un elemento y su borde.
+                        </p>
+
+                        <p>
+                            Permite separar el contenido del borde
+                            y mejorar la presentación visual.
+                        </p>
+
+                        <pre class="codigo-css">.caja {
+    padding: 20px;
+}
+
+.caja {
+    padding-top: 10px;
+    padding-bottom: 15px;
+}</pre>
+
+                    </div>
+                </div>
+
+                <!-- CAJA 5 -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="tarjeta-css">
+
+                        <span class="etiqueta-css">05 - Bordes</span>
+
+                        <h3>Border</h3>
+
+                        <p>
+                            El border es el borde que rodea
+                            el contenido y el padding de una caja.
+                        </p>
+
+                        <p>
+                            Se puede modificar su grosor,
+                            estilo y color.
+                        </p>
+
+                        <pre class="codigo-css">.caja {
+    border: 2px solid blue;
+    border-radius: 10px;
+}</pre>
+
+                    </div>
+                </div>
+
+                <!-- CAJA 6 -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="tarjeta-css">
+
+                        <span class="etiqueta-css">06 - Espaciado</span>
+
+                        <h3>Margin</h3>
+
+                        <p>
+                            El margin es el espacio exterior
+                            que separa una caja de otros elementos
+                            de la página.
+                        </p>
+
+                        <p>
+                            Permite controlar la distancia
+                            entre diferentes componentes.
+                        </p>
+
+                        <pre class="codigo-css">.caja {
+    margin: 20px;
+}
+
+.caja {
+    margin-top: 30px;
+}</pre>
+
+                    </div>
+                </div>
+
+                <!-- CAJA 7 -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="tarjeta-css">
+
+                        <span class="etiqueta-css">07 - Dimensiones</span>
+
+                        <h3>Width y Height</h3>
+
+                        <p>
+                            Estas propiedades permiten establecer
+                            el ancho y la altura del contenido
+                            de un elemento.
+                        </p>
+
+                        <pre class="codigo-css">.caja {
+    width: 400px;
+    height: 200px;
+}</pre>
+
+                        <p>
+                            También se pueden utilizar porcentajes
+                            y otras unidades de medida.
+                        </p>
+
+                    </div>
+                </div>
+
+                <!-- CAJA 8 -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="tarjeta-css">
+
+                        <span class="etiqueta-css">08 - Dimensiones</span>
+
+                        <h3>Max-width y Min-width</h3>
+
+                        <p>
+                            Estas propiedades permiten establecer
+                            límites para el ancho de un elemento.
+                        </p>
+
+                        <pre class="codigo-css">.contenedor {
+    max-width: 1000px;
+    min-width: 250px;
+    width: 100%;
+}</pre>
+
+                        <p>
+                            Son muy útiles para crear páginas
+                            adaptables a diferentes pantallas.
+                        </p>
+
+                    </div>
+                </div>
+
+                <!-- CAJA 9 -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="tarjeta-css">
+
+                        <span class="etiqueta-css">09 - Organización</span>
+
+                        <h3>Box-sizing</h3>
+
+                        <p>
+                            La propiedad box-sizing determina
+                            cómo se calcula el ancho y alto
+                            total de un elemento.
+                        </p>
+
+                        <pre class="codigo-css">* {
+    box-sizing: border-box;
+}</pre>
+
+                        <p>
+                            Con border-box, el padding y el borde
+                            se incluyen dentro del ancho y alto
+                            definidos.
+                        </p>
+
+                    </div>
+                </div>
+
+                <!-- CAJA 10 -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="tarjeta-css">
+
+                        <span class="etiqueta-css">10 - Comparación</span>
+
+                        <h3>Content-box y Border-box</h3>
+
+                        <p>
+                            Son los dos valores más utilizados
+                            de la propiedad box-sizing.
+                        </p>
+
+                        <p><strong>Content-box:</strong></p>
+
+                        <pre class="codigo-css">.caja {
+    box-sizing: content-box;
+    width: 200px;
+    padding: 20px;
+    border: 5px solid;
+}</pre>
+
+                        <p><strong>Border-box:</strong></p>
+
+                        <pre class="codigo-css">.caja {
+    box-sizing: border-box;
+    width: 200px;
+    padding: 20px;
+    border: 5px solid;
+}</pre>
+
+                    </div>
+                </div>
+
+                <!-- CAJA 11 -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="tarjeta-css">
+
+                        <span class="etiqueta-css">11 - Espaciado</span>
+
+                        <h3>Margin y Padding</h3>
+
+                        <p>
+                            Aunque ambas propiedades controlan
+                            espacios, tienen funciones diferentes.
+                        </p>
+
+                        <ul>
+                            <li>Margin: separa elementos entre sí.</li>
+                            <li>Padding: separa el contenido del borde.</li>
+                        </ul>
+
+                        <pre class="codigo-css">.caja {
+    margin: 20px;
+    padding: 20px;
+}</pre>
+
+                    </div>
+                </div>
+
+                <!-- CAJA 12 -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="tarjeta-css">
+
+                        <span class="etiqueta-css">12 - Ejemplo</span>
+
+                        <h3>Ejemplo completo del Box Model</h3>
+
+                        <p>
+                            Podemos combinar todas las propiedades
+                            para definir el tamaño y la separación
+                            de una caja.
+                        </p>
+
+                        <pre class="codigo-css">.caja {
+    width: 300px;
+    height: 150px;
+    padding: 20px;
+    border: 3px solid blue;
+    margin: 25px;
+    box-sizing: border-box;
+}</pre>
+
+                    </div>
+                </div>
+
+                <!-- CAJA 13 -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="tarjeta-css">
+
+                        <span class="etiqueta-css">13 - Diseño</span>
+
+                        <h3>Border-radius</h3>
+
+                        <p>
+                            La propiedad border-radius permite
+                            redondear las esquinas de una caja,
+                            creando diseños más modernos.
+                        </p>
+
+                        <pre class="codigo-css">.caja {
+    border-radius: 15px;
+}
+
+.caja-redonda {
+    border-radius: 50%;
+}</pre>
+
+                    </div>
+                </div>
+
+                <!-- CAJA 14 -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="tarjeta-css">
+
+                        <span class="etiqueta-css">14 - Diseño</span>
+
+                        <h3>Overflow</h3>
+
+                        <p>
+                            La propiedad overflow controla qué sucede
+                            cuando el contenido supera el espacio
+                            disponible dentro de una caja.
+                        </p>
+
+                        <pre class="codigo-css">.caja {
+    width: 200px;
+    height: 100px;
+    overflow: auto;
+}</pre>
+
+                        <ul>
+                            <li>visible: muestra el contenido.</li>
+                            <li>hidden: oculta el exceso.</li>
+                            <li>scroll: agrega desplazamiento.</li>
+                            <li>auto: lo agrega cuando es necesario.</li>
+                        </ul>
+
+                    </div>
+                </div>
+
+                <!-- CAJA 15 -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="tarjeta-css">
+
+                        <span class="etiqueta-css">15 - Importancia</span>
+
+                        <h3>Importancia del Box Model</h3>
+
+                        <p>
+                            El modelo de caja permite organizar
+                            correctamente los elementos de una página
+                            y controlar el espacio que ocupa cada uno.
+                        </p>
+
+                        <p>
+                            Es fundamental para construir diseños
+                            ordenados, equilibrados y adaptables.
+                        </p>
+
+                    </div>
+                </div>
+
+                <!-- CAJA FINAL -->
+                <div class="col-12">
+                    <div class="tarjeta-css tarjeta-prioridad">
+
+                        <span class="etiqueta-css">16 - Recomendaciones</span>
+
+                        <h3>Consejos para trabajar con Box Model</h3>
+
+                        <div class="row g-3">
+
+                            <div class="col-12 col-md-6">
+                                <ul>
+                                    <li>Utiliza box-sizing: border-box.</li>
+                                    <li>Controla el padding de los elementos.</li>
+                                    <li>Utiliza margin para separar las cajas.</li>
+                                </ul>
+                            </div>
+
+                            <div class="col-12 col-md-6">
+                                <ul>
+                                    <li>Define correctamente width y height.</li>
+                                    <li>Utiliza max-width para diseños adaptables.</li>
+                                    <li>Controla el overflow del contenido.</li>
+                                </ul>
+                            </div>
+
+                        </div>
+
+                        <p class="mb-0">
+                            Comprender el Box Model es fundamental
+                            para diseñar páginas web organizadas,
+                            profesionales y adaptables.
+                        </p>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="text-center p-4">
+        <p class="mb-0">© 2026 Digital Academy</p>
+    </footer>
+
+</body>
+</html>
